@@ -13,7 +13,4 @@
         <type>elgg_release</type>
         <version>1.8</version>
     </requires>
-    <requires>
-        <plugin>rijkshuisstijl</plugin>
-    </requires>
 </plugin_manifest>
