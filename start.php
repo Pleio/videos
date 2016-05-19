@@ -24,7 +24,6 @@ function videos_page_handler($segments) {
             break;
         case "all":
         default:
-            elgg_push_breadcrumb(elgg_echo('theme_ffd:cafe'));
             include(dirname(__FILE__) . "/pages/all.php");
             break;
     }
