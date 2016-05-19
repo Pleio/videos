@@ -1,0 +1,14 @@
+{
+    "name": "pleio/videos",
+    "description": "A side-wide videolist",
+    "type": "elgg-plugin",
+    "keywords": ["elgg", "plugin", "videos"],
+    "license": "GPL-2.0",
+    "support": {
+        "source": "https://github.com/Pleio/videos",
+        "issues": "https://github.com/Pleio/videos/issues"
+    },
+    "require": {
+        "composer/installers": "^1.0.8"
+    }
+}
