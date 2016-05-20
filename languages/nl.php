@@ -1,6 +1,7 @@
 <?php
 $dutch = array(
     'videos' => 'Video\'s',
+    'item:object:videos' => 'Video',
     'videos:add' => 'Voeg een video toe',
     'videos:edit' => 'Wijzig een video',
     'videos:title' => 'Titel',

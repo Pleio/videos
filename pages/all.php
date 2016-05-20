@@ -22,7 +22,7 @@ $options = array(
 
 $title = elgg_echo('videos');
 $body = elgg_view_layout('content', array(
-    'title' => $title,
+    'title' => '',
     'filter' => '',
     'content' => elgg_list_entities($options)
 ));

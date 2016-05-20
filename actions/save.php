@@ -5,7 +5,7 @@ $title = get_input('title');
 
 $urls = get_input('urls');
 $titles = get_input('titles');
-$tags = get_input('tags');
+$tags = string_to_tag_array(get_input('tags'));
 
 
 $container_guid = (int) get_input('container_guid');
