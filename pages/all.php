@@ -21,10 +21,13 @@ $options = array(
 );
 
 $title = elgg_echo('videos');
+
 $body = elgg_view_layout('content', array(
     'title' => '',
     'filter' => '',
-    'content' => elgg_list_entities($options)
+    'content' => elgg_view('videos/pages/all', array(
+        'entities' => elgg_list_entities($options)
+    ))
 ));
 
 echo elgg_view_page($title, $body);
