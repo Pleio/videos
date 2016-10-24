@@ -1,10 +1,10 @@
 <?php
 class ElggVideos extends ElggObject {
-    const SUBTYPE = 'videos';
+    const SUBTYPE = "videos";
 
     protected function initializeAttributes() {
         parent::initializeAttributes();
-        $this->attributes['subtype'] = self::SUBTYPE;
+        $this->attributes["subtype"] = self::SUBTYPE;
     }
 
     public function getVideos() {
@@ -28,11 +28,11 @@ class ElggVideos extends ElggObject {
 
     private function getVideoFromURL($title, $url) {
         $url = parse_url($url);
-        parse_str($url['query'], $string);
+        parse_str($url["query"], $query);
 
-        if (strpos($url, 'youtube.com') !== false) {
+        if (strpos($url["host"], "youtube.com") !== false) {
             $source = "youtube";
-            $id = $string['v'];
+            $id = $query["v"];
             $thumb = "https://img.youtube.com/vi/" . $id . "/hqdefault.jpg";
         }
 
